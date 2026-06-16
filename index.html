@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ananya Gulati - AI-First Principal Software Engineer specializing in backend systems, microservices, and architectural design. 6+ years of experience.">
+    <title>Ananya Gulati | AI-First Principal Software Engineer</title>
+    
+    <!-- Typography & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Anti-flicker Theme Script -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+<body>
+    <!-- Background Grid Effect -->
+    <div class="grid-overlay"></div>
+    <div class="glow-sphere sphere-1"></div>
+    <div class="glow-sphere sphere-2"></div>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Ananya<span class="logo-accent">.G /&gt;</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="bx bx-sun sun-icon"></i>
+                    <i class="bx bx-moon moon-icon"></i>
+                </button>
+                <a href="Ananya_Gulati_Resume.pdf" download class="btn btn-primary btn-sm cv-btn">
+                    <i class="bx bx-download"></i> Resume
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Open Menu">
+                    <i class="bx bx-menu-alt-right"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo">&lt;Ananya.G /&gt;</span>
+            <button class="close-drawer"><i class="bx bx-x"></i></button>
+        </div>
+        <nav class="drawer-links">
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#experience" class="drawer-link">Experience</a>
+            <a href="#skills" class="drawer-link">Skills</a>
+            <a href="#projects" class="drawer-link">Projects</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+        </nav>
+        <div class="drawer-footer">
+            <a href="Ananya_Gulati_Resume.pdf" download class="btn btn-primary width-full">
+                <i class="bx bx-download"></i> Download Resume
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-info">
+                    <div class="badge-container">
+                        <span class="pulse-dot"></span>
+                        <span class="badge-text">Available for New Opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Ananya Gulati</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span id="typewriter" class="typewriter-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        An AI-first Principal Software Engineer with 6+ years of expertise. Actively leveraging AI agents for accelerated development, bug fixes, data analysis, custom scripting, and performance optimization across scalable backend systems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            Get In Touch <i class="bx bx-right-arrow-alt"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            View My Work
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://linkedin.com/in/ananya-gulati/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                            <i class="bx bxl-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ananya-gulati" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                            <i class="bx bxl-github"></i>
+                        </a>
+                        <a href="mailto:ananya97.mail@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="bx bx-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-card glass-panel">
+                        <div class="card-glow"></div>
+                        <div class="avatar-container">
+                            <img src="https://avatars.githubusercontent.com/u/18749212?v=4" alt="Ananya Gulati" class="avatar-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Ananya Gulati</h3>
+                            <p class="card-title">Backend Architect & Dev</p>
+                            <div class="card-meta">
+                                <span><i class="bx bx-map"></i> Mumbai, IN</span>
+                                <span><i class="bx bx-briefcase"></i> 6 Yrs Exp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Small absolute cards for premium overlay aesthetic -->
+                    <div class="stat-badge stat-1 glass-panel">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-badge stat-2 glass-panel">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Microservices</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Summary Section -->
+        <section id="about" class="about-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Backend Specialist. Lead Developer.</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Over the last 6 years, my focus has been on building highly configurable, scalable backend architectures and designing microservices that handle complex enterprise workflows. Currently, as a **Principal Software Engineer at GEP Worldwide**, I lead core engineering sprints, optimize distributed data engines, and design tools that enable zero-code configurations for supply chain enterprise customers.
+                        </p>
+                        <p>
+                            As an AI-first software engineer, I actively leverage AI agents across feature development, bug fixes, data analysis, custom scripting, and performance optimizations, enhancing engineering productivity and speed-to-market.
+                        </p>
+                        <p>
+                            I enjoy diving deep into SQL/NoSQL performance tuning, crafting notification engines, and designing reusable plugins. Whether migrating millions of records seamlessly in Databricks or decoupling legacy systems into crisp microservices, my focus remains on performance, clean code patterns, and developer productivity.
+                        </p>
+                    </div>
+                    <div class="about-stats-grid">
+                        <div class="about-stat-card glass-panel">
+                            <i class="bx bx-bolt-circle stat-icon text-accent-1"></i>
+                            <div class="stat-card-text">
+                                <h3 class="stat-title">Configurability</h3>
+                                <p class="stat-desc">Reduced development time by 30% through dynamic http-call configuration engines.</p>
+                            </div>
+                        </div>
+                        <div class="about-stat-card glass-panel">
+                            <i class="bx bx-data stat-icon text-accent-2"></i>
+                            <div class="stat-card-text">
+                                <h3 class="stat-title">Migration Expert</h3>
+                                <p class="stat-desc">Led clean migration of ~3M MongoDB records using custom Python engines in Databricks.</p>
+                            </div>
+                        </div>
+                        <div class="about-stat-card glass-panel">
+                            <i class="bx bx-git-branch stat-icon text-accent-3"></i>
+                            <div class="stat-card-text">
+                                <h3 class="stat-title">Clean Architectures</h3>
+                                <p class="stat-desc">Designed object validation frameworks, BPMNs, and microservices for low-code platform apps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="experience" class="experience-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Professional History</span>
+                    <h2 class="section-title">My Career Journey</h2>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Timeline Card 1 (Principal SE) -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">January 2026 - Present</div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Principal Software Engineer</h3>
+                                <h4 class="company-name">GEP Worldwide</h4>
+                            </div>
+                            <p class="timeline-desc">
+                                Leading high-level system architectures, platform roadmaps, and technical steering for GEP's low-code suite.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Formulating the core architectural roadmap for backend platform modules, optimizing latency and resource allocation.</li>
+                                <li>Mentoring and guiding engineering squads, defining design standards, and leading code reviews to ensure system integrity.</li>
+                                <li>Collaborating directly with key business stakeholders to draft technical schemas for highly configurable enterprise application modules and platform features.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Architecture Design</span>
+                                <span class="tech-tag">System Design</span>
+                                <span class="tech-tag">Technical Leadership</span>
+                                <span class="tech-tag">Platform Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Card 2 (Senior SE) -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">July 2022 - January 2026</div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Senior Software Engineer</h3>
+                                <h4 class="company-name">GEP Worldwide</h4>
+                            </div>
+                            <p class="timeline-desc">
+                                Delivered high-impact client features, optimized high-throughput systems, and integrated AI capabilities to drive performance and efficiency.
+                            </p>
+                             <ul class="timeline-bullets">
+                                <li>Delivered major client-facing initiatives including inventory management platform launches, high-throughput API/database integrations, and multiple production enablements for global manufacturing and healthcare clients.</li>
+                                <li>Improved inbound request ingestion efficiency by more than **10x** through staging optimizations and adoption of a high-throughput bulk processing framework.</li>
+                                <li>Developed and enhanced core platform modules such as custom workflow engines, approval orchestrator migrations, and secure audit generation modules.</li>
+                                <li>Enhanced the platform's AI Agent for automated Purchase Order (PO) creation and implemented advanced shipping validation rules to boost automation.</li>
+                                <li>Strengthened overall system performance by coordinating performance testing, analyzing load results, and executing database/API optimizations.</li>
+                                <li>Provided reliable production support, resolving 30+ critical and blocker incidents across major enterprise accounts with minimal disruption.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Azure Databricks</span>
+                                <span class="tech-tag">Camunda</span>
+                                <span class="tech-tag">AI Integration</span>
+                                <span class="tech-tag">Performance Tuning</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Card 3 (SE) -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">July 2020 - July 2022</div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Software Engineer</h3>
+                                <h4 class="company-name">GEP Worldwide</h4>
+                            </div>
+                            <p class="timeline-desc">
+                                Collaborated across product teams to build core modules for GEP's SaaS products.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Built core BPMNs, cross-app REST interfaces, and custom plugins for inventory management workflows.</li>
+                                <li>Implemented responsive UI dashboards and integrated React Native mobile clients with barcode scanning engines.</li>
+                                <li>Collaborated closely with Product Owners and QA teams to iterate on requirements using Agile methodologies.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">RESTful APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Card 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2019 - July 2019</div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Research Intern (Immersion Program)</h3>
+                                <h4 class="company-name">Illinois Institute of Technology (Chicago, USA)</h4>
+                            </div>
+                            <p class="timeline-desc">
+                                Conducted genetic data analytics under academic supervision.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Analyzed and cleaned gigabytes of tabular genetic databases utilizing Pandas and NumPy.</li>
+                                <li>Designed statistical scoring and filtering models to select candidate chemical compounds for Alzheimer's therapeutic testing.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Data Cleaning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-card glass-panel">
+                        <div class="skills-card-header">
+                            <i class="bx bx-code-alt card-icon text-accent-1"></i>
+                            <h3 class="skill-category">Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-item">C#</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">SQL</span>
+                            <span class="skill-item">HTML5 / CSS3</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend & Systems -->
+                    <div class="skills-card glass-panel">
+                        <div class="skills-card-header">
+                            <i class="bx bx-server card-icon text-accent-2"></i>
+                            <h3 class="skill-category">Backend & Core</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-item">.NET Core</span>
+                            <span class="skill-item">ASP.NET WebAPI</span>
+                            <span class="skill-item">Node.js / Express</span>
+                            <span class="skill-item">Microservices</span>
+                            <span class="skill-item">RESTful Web Services</span>
+                            <span class="skill-item">OOP Design</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Databases & Frameworks -->
+                    <div class="skills-card glass-panel">
+                        <div class="skills-card-header">
+                            <i class="bx bx-circle-three-quarter card-icon text-accent-3"></i>
+                            <h3 class="skill-category">Data & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-item">AI Agents & Workflows</span>
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">SQL Server</span>
+                            <span class="skill-item">Azure Databricks</span>
+                            <span class="skill-item">Git / GitHub</span>
+                            <span class="skill-item">Agile / Scrum</span>
+                            <span class="skill-item">Docker</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend Frameworks -->
+                    <div class="skills-card glass-panel">
+                        <div class="skills-card-header">
+                            <i class="bx bx-devices card-icon text-accent-4"></i>
+                            <h3 class="skill-category">Frontend & Mobile</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-item">React Native</span>
+                            <span class="skill-item">Angular</span>
+                            <span class="skill-item">SASS / CSS</span>
+                            <span class="skill-item">Responsive Web Design</span>
+                            <span class="skill-item">Zebra API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio Showcase</span>
+                    <h2 class="section-title">Projects & Contributions</h2>
+                </div>
+                
+                <!-- Project Filter Buttons -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="industrial">Industrial</button>
+                    <button class="filter-btn" data-filter="opensource">Open Source</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel" data-category="industrial">
+                        <div class="project-card-image">
+                            <div class="project-placeholder bg-gradient-1">
+                                <i class="bx bx-line-chart"></i>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-type-badge">Industrial</span>
+                            <h3 class="project-title">Time Series Forecasting App</h3>
+                            <p class="project-description">
+                                Built for GEP. Facilitates item movement forecasting between buyers and suppliers. Leveraged configurable microservices to handle large volumes of time series data.
+                            </p>
+                            <div class="project-tech">
+                                <span>.NET Core</span>
+                                <span>MongoDB</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel" data-category="industrial">
+                        <div class="project-card-image">
+                            <div class="project-placeholder bg-gradient-2">
+                                <i class="bx bx-check-shield"></i>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-type-badge">Industrial</span>
+                            <h3 class="project-title">Quality Management Solution</h3>
+                            <p class="project-description">
+                                A low-code platform app enabling supplier and item-level evaluations. Handles complex form validations and dynamic logic triggers for verifying supply quality.
+                            </p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>.NET Core</span>
+                                <span>Angular</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel" data-category="industrial">
+                        <div class="project-card-image">
+                            <div class="project-placeholder bg-gradient-3">
+                                <i class="bx bx-barcode-reader"></i>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-type-badge">Industrial</span>
+                            <h3 class="project-title">Inventory Management App</h3>
+                            <p class="project-description">
+                                A mobile client integrated with Zebra barcode scanner hardware. Features dynamic data-driven UI tables for stock status checking and inventory adjustments.
+                            </p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Zebra SDK</span>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="project-card glass-panel" data-category="opensource">
+                        <div class="project-card-image">
+                            <div class="project-placeholder bg-gradient-4">
+                                <i class="bx bx-key"></i>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-type-badge">Open Source</span>
+                            <h3 class="project-title">Express Mongoose User API</h3>
+                            <p class="project-description">
+                                An open-source reference API containing fully integrated secure registration, login, and schema configuration setups. Available on GitHub.
+                            </p>
+                            <div class="project-tech">
+                                <span>ExpressJS</span>
+                                <span>Mongoose</span>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ananya-gulati/loginandreg" target="_blank" rel="noopener" class="project-link">
+                                    <i class="bx bxl-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Discuss Your Project</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3 class="info-title">Contact Information</h3>
+                        <p class="info-desc">
+                            Feel free to reach out via the contact form, email, or drop me a connection request on LinkedIn. I am always happy to discuss backend systems, microservices design, or software architectures.
+                        </p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="bx bx-envelope info-icon"></i>
+                                <div class="info-item-content">
+                                    <span class="info-label">Email Me</span>
+                                    <a href="mailto:ananya97.mail@gmail.com" class="info-value">ananya97.mail@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="bx bx-map info-icon"></i>
+                                <div class="info-item-content">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Navi Mumbai, Maharashtra, India</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="bx bx-paper-plane info-icon"></i>
+                                <div class="info-item-content">
+                                    <span class="info-label">Socials</span>
+                                    <div class="info-social-links">
+                                        <a href="https://linkedin.com/in/ananya-gulati/" target="_blank" rel="noopener" class="mini-social">LinkedIn</a>
+                                        <a href="https://github.com/ananya-gulati" target="_blank" rel="noopener" class="mini-social">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-panel glass-panel">
+                        <form id="contact-form" action="https://formsubmit.co/ananya97.mail@gmail.com" method="POST" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Collaboration opportunity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Hi Ananya, I'd love to chat about..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary width-full">
+                                Send Message <i class="bx bx-paper-plane"></i>
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Ananya Gulati. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/ananya-gulati/" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/ananya-gulati" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
